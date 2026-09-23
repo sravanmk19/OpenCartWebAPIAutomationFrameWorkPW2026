@@ -47,7 +47,7 @@ import { BasePage } from "./BasePage";
 
          async doLogin(username:string, password:string): Promise<void>
          {
-            console.log(`User creds: ${username} and ${password}`);
+            console.log(`App User creds: ${username} and ${password}`);
             await this.emaiId.fill(username);
             await this.password.fill(password);
             // await this.page.waitForTimeout(5000);
