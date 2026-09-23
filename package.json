@@ -1,0 +1,18 @@
+{
+  "name": "pw2026naveencart_web_api_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Trainer Naveen Automation Lab",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

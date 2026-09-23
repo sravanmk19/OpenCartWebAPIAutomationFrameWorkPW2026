@@ -1,0 +1,18 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/reports/
+/reporting-labs/
+
+# env files (Confidential)
+config/.env.*
+
+#build
+dist/
+
+reporting-labs.history.json
