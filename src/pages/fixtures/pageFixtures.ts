@@ -4,6 +4,7 @@ import { LoginPage } from '../LoginPage';
 import { HomePage } from '../HomePage';
 import { SearchResultPage } from '../SearchResultPage';
 import { ProductInfoPage } from '../ProductInfoPage';
+import { CartPage } from '../CartPage';
 
 
 type pageFeatures={
@@ -12,6 +13,7 @@ type pageFeatures={
     homePage:HomePage
     searchResultPage:SearchResultPage,
     productInfoPage:ProductInfoPage
+    cartInfoPage:CartPage
 };
 
 //extend the playwright test: using baseTest.extend: Inhertiance
@@ -45,6 +47,12 @@ export let test=baseTest.extend<pageFeatures>({
         {
             let productInfoPage=new ProductInfoPage(page);
             use(productInfoPage);
+        },
+
+            cartInfoPage:async ({page},use)=>
+        {
+            let cartInfoPage=new CartPage(page);
+            use(cartInfoPage);
         },
 
 })
